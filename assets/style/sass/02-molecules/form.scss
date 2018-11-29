@@ -1,0 +1,13 @@
+form {
+    .wrapped-fields {
+        display: flex;
+
+        .one-field {
+            margin: 24px;
+        }
+    }
+
+    .one-field {
+        margin: 24px;
+    }
+}

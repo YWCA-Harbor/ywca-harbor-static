@@ -1,0 +1,35 @@
+.footer-container {
+    border-top: 3px solid $darkWhite;
+    min-height: 280px;
+
+    .footer-grid {
+        display: flex;
+
+        .footer-col {
+            text-align: center;
+            margin: auto;
+
+            ul {
+                list-style: none;
+            }
+
+            &:nth-child(2) {
+                li {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    &.light {
+        background: $lightMediumGrey;
+    }
+
+    &.dark {
+        background: $mediumDarkGrey;
+    }
+
+    &.primary {
+        background: $primaryOrange;
+    }
+}

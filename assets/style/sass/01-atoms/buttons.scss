@@ -1,0 +1,48 @@
+a {
+    &.btn {
+        padding: 12px 20px;
+        font-weight: 700;
+        border-radius: 0;
+        border-width: 0;
+        margin: 5px;
+
+
+        &.btn-primary {
+            @extend %transitions;
+            background: $primaryOrange;
+            color: #fff;
+
+            &:hover {
+                @extend %transitions;
+                background: $mediumDarkGrey;
+            }
+        }
+
+        &.btn-light {
+            @extend %transitions;
+            background: #fff;
+            color: $primaryOrange;
+
+            &:hover {
+                @extend %transitions;
+                background: $mediumDarkGrey;
+                color: #fff;
+            }
+        }
+
+        &.btn-dark {
+            @extend %transitions;
+            background: $mediumDarkGrey;
+            color: #fff;
+
+            &:hover {
+                @extend %transitions;
+                background: $primaryOrange;
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

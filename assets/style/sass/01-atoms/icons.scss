@@ -1,0 +1,92 @@
+a {
+    &.social-icon {
+        position: relative;
+        display: flex;
+        height: 40px;
+        width: 40px;
+
+        &.round {
+
+            &-primary {
+                @extend %transitions;
+                background: $primaryOrange;
+                border-radius: 50%;
+                color: #fff;
+
+                &:hover {
+                    @extend %transitions;
+                    background: $mediumDarkGrey;
+                }
+            }
+
+            &-light {
+                @extend %transitions;
+                color: $primaryOrange;
+                border-radius: 50%;
+                background: #fff;
+
+                &:hover {
+                    @extend %transitions;
+                    background: $mediumDarkGrey;
+                    color: #fff;
+                }
+            }
+
+            &-dark {
+                @extend %transitions;
+                background: $mediumDarkGrey;
+                border-radius: 50%;
+                color: #fff;
+
+                &:hover {
+                    @extend %transitions;
+                    background: $primaryOrange;
+                }
+            }
+        }
+
+        &.square {
+
+            &-primary {
+                @extend %transitions;
+                background: $primaryOrange;
+                color: #fff;
+
+                &:hover {
+                    @extend %transitions;
+                    background: $mediumDarkGrey;
+                }
+            }
+
+            &-light {
+                @extend %transitions;
+                color: $primaryOrange;
+                background: #fff;
+
+                &:hover {
+                    @extend %transitions;
+                    background: $mediumDarkGrey;
+                    color: #fff;
+                }
+            }
+
+            &-dark {
+                @extend %transitions;
+                background: $mediumDarkGrey;
+                color: #fff;
+
+                &:hover {
+                    @extend %transitions;
+                    background: $primaryOrange;
+                }
+            }
+        }
+
+        .fa,
+        .fab,
+        .far {
+            font-size: 20px;
+            margin: auto;
+        }
+    }
+}

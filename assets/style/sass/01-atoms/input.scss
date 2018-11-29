@@ -1,0 +1,194 @@
+input {
+
+    &[type="tel"],
+    &[type="text"],
+    &[type="number"],
+    &[type="email"] {
+        background: #fff;
+        padding: 10px;
+        color: #000;
+        resize: none;
+        max-width: 100%;
+
+        &:placeholder-shown {
+            border: 1px solid $mediumLightGrey;
+            @extend %transitions;
+        }
+
+        &:not(:placeholder-shown),
+        &:focus {
+            border: 1px solid $primaryOrange;
+            @extend %transitions;
+            outline: none;
+        }
+    }
+
+    &[type="submit"],
+    &[type="reset"] {
+        background: $primaryOrange;
+        @extend %transitions;
+        padding: 12px 20px;
+        font-weight: 700;
+        border-radius: 0;
+        cursor: pointer;
+        border-width: 0;
+        margin: 5px;
+        color: #fff;
+
+        &:hover {
+            @extend %transitions;
+            color: $primaryOrange;
+            background: #fff;
+        }
+
+        &:focus {
+            outline: 1px solid $primaryOrange;
+        }
+    }
+
+    &[type="radio"] {
+        display: none;
+
+        &:checked {
+            + .box {
+                background-color: $primaryOrange;
+                border: 3px solid $primaryOrange;
+
+                span {
+                    color: #fff;
+
+                    &:before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    + .box {
+        width: 90px;
+        height: 45px;
+        transition: all 250ms ease;
+        border: 3px solid #fff;
+        background-color: #fff;
+        will-change: transition;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+
+        &:hover,
+        &:active{
+            border: 3px solid $primaryOrange;
+        }
+
+        span {
+            transition: all 300ms ease;
+            color: $primaryOrange;
+            position: absolute;
+            user-select: none;
+            top: 12px;
+            right: 0;
+            left: 0;
+        }
+    }
+
+    &[type="number"]::-webkit-inner-spin-button,
+    &[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &[type="checkbox"] {
+        display: none;
+
+        &:checked + label {
+            span {
+                &:first-child {
+                    border-color: $primaryOrange;
+                    background: $primaryOrange;
+                    animation: wave .4s ease;
+
+                    svg {
+                        stroke-dashoffset: 0;
+
+                        &:before {
+                            transition: all .6s ease;
+                            transform: scale(3.5);
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        + label {
+            -webkit-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            margin: auto;
+
+            span {
+                transform: translate3d(0,0,0);
+                vertical-align: middle;
+                display: inline-block;
+
+                &:first-child {
+                    border: 1px solid #9098A9;
+                    @extend %transitions;
+                    vertical-align: middle;
+                    transform: scale(1);
+                    position: relative;
+                    border-radius: 3px;
+                    height: 18px;
+                    width: 18px;
+
+                    svg {
+                        transform: translate3d(0,0,0);
+                        transition: all .3s ease;
+                        stroke-dashoffset: 16px;
+                        stroke-dasharray: 16px;
+                        stroke-linejoin: round;
+                        stroke-linecap: round;
+                        transition-delay: .1s;
+                        position: absolute;
+                        stroke-width: 2;
+                        stroke: #fff;
+                        fill: none;
+                        left: 2px;
+                        top: 3px;
+                    }
+                    &:before {
+                        background: $primaryOrange;
+                        transform: scale(0);
+                        border-radius: 50%;
+                        display: block;
+                        height: 100%;
+                        content: "";
+                        width: 100%;
+                        opacity: 1;
+                    }
+                }
+                &:last-child {
+                    padding-left: 8px;
+                }
+            }
+            &:hover {
+                span:first-child {
+                    border-color: $primaryOrange;
+                }
+            }
+        }
+    }
+}
+
+label {
+    &.required {
+        &::before {
+            color: $secondaryOrange;
+            vertical-align: middle;
+            padding-right: 4px;
+            font-size: 16px;
+            content: "*";
+        }
+    }
+}
