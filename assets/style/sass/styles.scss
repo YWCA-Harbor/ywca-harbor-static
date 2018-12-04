@@ -1,4 +1,8 @@
-/* 01-atoms */
+html,
+body {
+    margin: 0px;
+}
+// 01-atoms
 
 @import './01-atoms/colors';
 @import './01-atoms/animations';
@@ -7,8 +11,9 @@
 @import './01-atoms/icons';
 @import './01-atoms/input';
 
-/* 02-molecules */
+// 02-molecules
 @import './02-molecules/navbar';
 @import './02-molecules/footer';
-@import './02-molecules/form.scss';
-@import './02-molecules/jumbotron.scss';
+
+// pages
+@import './pages/index.scss';
