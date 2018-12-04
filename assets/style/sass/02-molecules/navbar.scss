@@ -5,6 +5,7 @@
 }
 
 header {
+    font-family: "Source Sans Pro", sans-serif;
     padding-bottom: 36px;
 
     #slanted-header {
@@ -300,6 +301,20 @@ header {
                     width: 100%;
                     left: 1%;
                 }
+            }
+        }
+
+        .donate-button {
+            position: absolute;
+            z-index: 100;
+            height: 60px;
+            width: 150px;
+            padding: 0px;
+            right: 0px;
+            top: 0px;
+
+            a {
+                line-height: 60px;
             }
         }
 
