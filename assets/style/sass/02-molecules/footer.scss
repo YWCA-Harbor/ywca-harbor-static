@@ -18,11 +18,42 @@
             ul {
                 list-style: none;
                 padding: 0px;
+
+                li {
+
+                    &:first-child {
+                        div {
+                            right: 60%;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        div {
+                            left: 60%;
+                        }
+                    }
+
+                    div {
+                        background: $darkGrey;
+                        position: absolute;
+                        width: 120px;
+                        height: 8px;
+                        top: 186%;
+                    }
+                }
             }
 
             &:nth-child(2) {
                 li {
                     display: inline-block;
+                }
+
+                &:after {
+                    background: $darkGrey;
+                    position: absolute;
+                    padding: 16px 4px;
+                    content: "";
+                    left: 50%;
                 }
             }
         }
