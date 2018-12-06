@@ -50,7 +50,7 @@ header {
 
                     @media only screen and (max-width: 767px) {
                         margin-right: 0px !important;
-                        height: 72vh;
+                        height: 100vh;
                         right: -100%;
                         width: 300%;
                     }
@@ -239,6 +239,7 @@ header {
 
                         @media only screen and (max-width: 767px) {
                             font-size: 30px;
+                            padding: 0vh 4vw;
                         }
                     }
 
@@ -249,7 +250,6 @@ header {
                         position: absolute;
                         display: none;
                         width: 240px;
-                        left: 184px;
                         z-index: 1;
                         top: 60px;
 
@@ -271,19 +271,29 @@ header {
                                 }
                             }
 
+                            &.mobile-display {
+                                display: none;
+                            }
+
                             @media only screen and (max-width: 767px) {
                                 border: 1px solid $mediumDarkGrey;
                                 color: $primaryOrange;
-                                padding: 12px 40px;
+                                padding: 12px;
                                 background: #fff;
+
+                                &.mobile-display {
+                                    display: block;
+                                }
                             }
                         }
 
                         @media only screen and (max-width: 767px) {
+                            left: 0 !important;
                             box-shadow: none;
+                            position: static;
+                            margin-top: 0;
+                            float: none;
                             width: 100vw;
-                            left: -1%;
-                            top: 68%;
                         }
                     }
 
@@ -293,18 +303,35 @@ header {
 
                     @media only screen and (max-width: 767px) {
                         display: block !important;
-                        padding-bottom: 2vh;
+                        margin: 0px;
+                    }
+
+                    &:nth-child(2) {
+                        div {
+                            left: 196px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        div {
+                            left: 292px;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        div {
+                            left: 408px;
+                        }
                     }
                 }
 
                 @media only screen and (max-width: 767px) {
                     margin-top: -104px !important;
-                    padding: 0px 8vw !important;
                     text-align: left !important;
                     top: 184px !important;
-                    height: 270px;
+                    overflow-y: scroll;
+                    height: 80vh;
                     width: 100vw;
-                    left: 1%;
                 }
             }
         }
