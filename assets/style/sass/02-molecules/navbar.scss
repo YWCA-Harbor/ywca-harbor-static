@@ -1,12 +1,12 @@
-#slanted-header * {
-    -webkit-transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
-    -moz-transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
-    transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
-}
-
 header {
     font-family: "Source Sans Pro", sans-serif;
     padding-bottom: 36px;
+
+    #slanted-header * {
+        -webkit-transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
+        -moz-transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
+        transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
+    }
 
     #slanted-header {
         box-shadow: 0px 9px 34px $blackOpacity;
@@ -16,7 +16,7 @@ header {
         height: 60px;
         padding: 0px;
         margin: 0px;
-        width: 100%;
+        width: 100vw;
         left: 0px;
         top: 0px;
 
@@ -49,8 +49,8 @@ header {
                     right: 0%;
 
                     @media only screen and (max-width: 767px) {
-                        margin-right: 0px!important;
-                        height: 144vh;
+                        margin-right: 0px !important;
+                        height: 72vh;
                         right: -100%;
                         width: 300%;
                     }
@@ -104,6 +104,10 @@ header {
                 max-width: 280px;
                 width: 280px;
                 height: auto;
+
+                @media only screen and (max-width: 767px){
+                    width: 180px;
+                }
             }
         }
 
@@ -171,7 +175,7 @@ header {
             position: fixed;
             height: 60px;
             margin: auto;
-            width: 100%;
+            width: 100vw;
             opacity: 0;
             padding: 0;
             top: -50px;
@@ -184,7 +188,7 @@ header {
                 padding: 0;
                 left: 0px;
                 top: 0px;
-                width: 400px;
+                max-width: 800px;
                 margin: auto;
                 position: relative;
                 height: 60px;
@@ -243,9 +247,9 @@ header {
                         box-shadow: 0px 8px 16px 0px $blackOpacity;
                         background: $lightWhite;
                         position: absolute;
-                        min-width: 160px;
                         display: none;
-                        left: 160px;
+                        width: 240px;
+                        left: 184px;
                         z-index: 1;
                         top: 60px;
 
@@ -254,6 +258,7 @@ header {
                             padding: 12px 16px;
                             text-align: left;
                             display: block;
+                            line-height: 2;
                             color: #fff;
                             float: none;
 
@@ -276,7 +281,7 @@ header {
 
                         @media only screen and (max-width: 767px) {
                             box-shadow: none;
-                            width: 100%;
+                            width: 100vw;
                             left: -1%;
                             top: 68%;
                         }
@@ -296,9 +301,9 @@ header {
                     margin-top: -104px !important;
                     padding: 0px 8vw !important;
                     text-align: left !important;
-                    top: 64vh !important;
+                    top: 184px !important;
                     height: 270px;
-                    width: 100%;
+                    width: 100vw;
                     left: 1%;
                 }
             }
@@ -329,6 +334,10 @@ header {
                 width: 0%;
                 top: 61px;
                 left: 0px;
+            }
+
+            .donate-button {
+                display: none;
             }
         }
     }
