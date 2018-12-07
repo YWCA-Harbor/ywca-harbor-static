@@ -1,1 +1,1 @@
-//@prepros-append modal.js
+//@prepros-append navbar.js

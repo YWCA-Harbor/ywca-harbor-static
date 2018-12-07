@@ -102,10 +102,11 @@ header {
             img {
                 vertical-align: middle!important;
                 max-width: 280px;
+                display: none;
                 width: 200px;
                 height: 24px;
 
-                &#mainNavLogo {
+                &.main-logo-animation {
                     width: 180px;
                     height: 56px;
                 }
@@ -114,7 +115,7 @@ header {
                     width: 160px;
                     height: 24px;
 
-                    &#mainNavLogo {
+                    &.main-logo-animation {
                         width: 160px;
                     }
                 }
