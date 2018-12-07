@@ -218,6 +218,16 @@ header {
                     margin-right: 22px;
                     display: inline-flex;
 
+                    &.nav-dropdown {
+
+                        >a {
+                            @media only screen and (max-width: 767px) {
+                                display: unset;
+                                width: 0px;
+                            }
+                        }
+                    }
+
                     a {
                         text-transform: uppercase;
                         @extend %transitions;
@@ -258,8 +268,10 @@ header {
                         }
 
                         @media only screen and (max-width: 767px) {
-                            font-size: 30px;
                             padding: 0vh 4vw;
+                            font-size: 30px;
+                            display: block;
+                            width: 100%;
                         }
                     }
 
@@ -317,16 +329,23 @@ header {
                         }
                     }
 
-                    &:hover,
-                    &:active {
-                        div {
-                            display: block;
+                    @media only screen and (min-width: 768px) {
+                        &:hover{
+                            div {
+                                display: block;
+                            }
                         }
                     }
 
                     @media only screen and (max-width: 767px) {
                         display: block !important;
                         margin: 0px;
+
+                        &.active {
+                            div {
+                                display: block;
+                            }
+                        }
                     }
 
                     &:nth-child(2) {
