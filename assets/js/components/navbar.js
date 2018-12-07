@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if(document.location.pathname === '/') {
         navBrandAnimation('logo-animation', 2500, 400);
     } else {
-        navBrandAnimation('main-logo-animation', 5000, 5000);
+        mainNavBrandAnimation('main-logo-animation');
     }
 });
 
@@ -29,10 +29,20 @@ function navBrandAnimation(classSelector, timer, nestedTimer) {
                         el.style = '';
                         el.className = classSelector;
                         innerVar === $navLogos.length ?
-                        navBrandAnimation('main-logo-animation', 25000, 9000) : 'Don\'t do anything';
+                        mainNavBrandAnimation('main-logo-animation') : 'Don\'t do anything';
                     }, nestedTimer * i);
                 }, nestedTimer * i);
             }, timer * i);
         })(i);
+    }
+}
+
+function mainNavBrandAnimation(classSelector) {
+    var $navLogos = document.getElementsByClassName(classSelector);
+
+    for (var i = 0; i <= $navLogos.length; i++) {
+        var el = $navLogos[i];
+        el.style.display = 'inline-block';
+        el.className += ' flip-in';
     }
 }
