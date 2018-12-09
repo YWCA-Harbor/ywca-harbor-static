@@ -26,4 +26,5 @@ prepros-6.config
 .history
 
 # Temporary
-assets/style/sass/vendors/
+assets/style/sass/vendors/bootstrap-styles
+
