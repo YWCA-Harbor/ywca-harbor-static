@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+ @import "./bootstrap-styles/bootstrap-grid";
+
 @import "./bootstrap-styles/functions";
 @import "./bootstrap-styles/variables";
 @import "./bootstrap-styles/mixins";
@@ -13,7 +15,7 @@
 // @import "./bootstrap-styles/type";
 @import "./bootstrap-styles/images";
 // @import "./bootstrap-styles/code";
-// @import "./bootstrap-styles/grid";
+@import "./bootstrap-styles/grid";
 // @import "./bootstrap-styles/tables";
 @import "./bootstrap-styles/forms";
 // @import "./bootstrap-styles/buttons";
@@ -38,5 +40,5 @@
 // @import "./bootstrap-styles/tooltip"; // <-- Hover state
 // @import "./bootstrap-styles/popover"; // <-- Click state
 @import "./bootstrap-styles/carousel";
-// @import "./bootstrap-styles/utilities";
+@import "./bootstrap-styles/utilities";
 @import "./bootstrap-styles/print";

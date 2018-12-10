@@ -1,5 +1,10 @@
 main.ywca-harbor {
     &.index {
-        
+        #index-hero {
+            background-image: url(https://image.shutterstock.com/image-photo/profile-little-african-girl-writing-260nw-536550898.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
     }
 }
