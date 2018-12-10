@@ -54,10 +54,6 @@ function mainNavBrandAnimation(classSelector) {
 }
 
 function toggleDropdownMobile() {
-    if(window.innerWidth >= 768) {
-        return;
-    }
-
     var $dropDown = document.getElementsByClassName('nav-dropdown');
 
     for(var i = 0; i < $dropDown.length; i++) {
