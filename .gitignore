@@ -24,3 +24,7 @@ prepros-6.config
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
+
+# Temporary
+assets/style/sass/vendors/bootstrap-styles
+

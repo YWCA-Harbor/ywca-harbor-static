@@ -4,11 +4,19 @@
     transition: all .2s ease-in-out;
 }
 
+%no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 @keyframes wave {
     50% { transform: scale(.9) };
 }
 
-@keyframes fadeIn {
+@keyframes flip-in {
     from {
         transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
         animation-timing-function: ease-in;
@@ -34,11 +42,34 @@
     }
 }
 
-.fadeIn {
+.flip-in {
     backface-visibility: visible !important;
     animation-fill-mode: both;
-    animation-name: fadeIn;
+    animation-name: flip-in;
     animation-duration: 1s;
+}
+
+
+@keyframes flip-out {
+    from {
+      transform: perspective(400px);
+    }
+
+    30% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      opacity: 1;
+    }
+
+    to {
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      opacity: 0;
+    }
+}
+
+.flip-out {
+    animation-duration: 0.75s;
+    animation-name: flip-out;
+    backface-visibility: visible !important;
 }
 
 // /assets/style/sass/02-molecules/modal.scss

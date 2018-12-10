@@ -2,8 +2,11 @@ html,
 body {
     margin: 0px;
 }
-// 01-atoms
 
+// vendors
+@import './vendors/bootstrap.scss';
+
+// 01-atoms
 @import './01-atoms/colors';
 @import './01-atoms/animations';
 @import './01-atoms/typography';
@@ -12,9 +15,9 @@ body {
 @import './01-atoms/input';
 
 // 02-molecules
+@import './02-molecules/failureIE.scss';
 @import './02-molecules/navbar';
 @import './02-molecules/footer';
-@import './02-molecules/modal';
 
 // pages
 @import './pages/index.scss';

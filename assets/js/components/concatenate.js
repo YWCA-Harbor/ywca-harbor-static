@@ -1,1 +1,2 @@
-//@prepros-append modal.js
+//@prepros-append detect-ie.js
+//@prepros-append navbar.js
