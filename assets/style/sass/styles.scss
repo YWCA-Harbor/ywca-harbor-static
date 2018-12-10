@@ -15,6 +15,7 @@ body {
 @import './01-atoms/input';
 
 // 02-molecules
+@import './02-molecules/failureIE.scss';
 @import './02-molecules/navbar';
 @import './02-molecules/footer';
 
