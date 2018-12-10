@@ -1,6 +1,7 @@
 a {
     &.btn {
         padding: 12px 20px;
+        @extend %no-select;
         font-weight: 700;
         border-radius: 0;
         cursor: pointer;
