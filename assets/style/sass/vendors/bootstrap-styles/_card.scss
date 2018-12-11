@@ -10,8 +10,9 @@
   word-wrap: break-word;
   background-color: $card-bg;
   background-clip: border-box;
-  border: $card-border-width solid $card-border-color;
-  @include border-radius($card-border-radius);
+  // border: $card-border-width solid $card-border-color;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0.5rem; // @include border-radius($card-border-radius);
 
   > hr {
     margin-right: 0;
@@ -175,7 +176,12 @@
   // The child selector allows nested `.card` within `.card-group`
   // to display properly.
   > .card {
-    margin-bottom: $card-group-margin;
+    // margin-bottom: $card-group-margin;
+    margin: 0px $card-group-margin;
+
+    @media only screen and (max-width: 576px) {
+      margin: $card-group-margin;
+    }
   }
 
   @include media-breakpoint-up(sm) {
