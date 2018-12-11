@@ -176,12 +176,8 @@
   // The child selector allows nested `.card` within `.card-group`
   // to display properly.
   > .card {
+    margin: $card-group-margin;
     // margin-bottom: $card-group-margin;
-    margin: 0px $card-group-margin;
-
-    @media only screen and (max-width: 576px) {
-      margin: $card-group-margin;
-    }
   }
 
   @include media-breakpoint-up(sm) {

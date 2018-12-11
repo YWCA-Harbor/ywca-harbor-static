@@ -45,7 +45,10 @@ main.ywca-harbor {
 
         #indexCarousel {
             text-align: center;
-            background: $blackOpacity;
+            background-color: rgba(250, 70, 22, 0.4);
+            background-image: url(https://image.shutterstock.com/image-photo/parents-giving-piggyback-ride-children-260nw-160939997.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }
