@@ -1,0 +1,131 @@
+main.ywca-harbor {
+    &.about {
+
+        &-mission {
+            #aboutMissionHero {
+                background-image: url(https://image.shutterstock.com/image-photo/african-american-cute-little-girl-260nw-288152339.jpg);
+                @extend %parallax;
+                min-height: 33.33em;
+                text-align: center;
+            }
+
+            .about-mission-statements {
+                text-align: center;
+
+                p {
+                    font-size: 36px;
+                }
+
+                h4 {
+                    margin: 0;
+                }
+            }
+
+            #aboutMissionVision {
+                background-image: url(https://image.shutterstock.com/image-photo/group-women-socialize-teamwork-happiness-260nw-526817902.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: cover;
+                text-align: center;
+                min-height: 33.33em;
+
+                h1 {
+                    background: rgba(0, 0, 0, 0.5);
+                    padding: 4px 24px;
+                    display: initial;
+                }
+            }
+
+            #aboutMissionChangeLives {
+                background-image: url(https://image.shutterstock.com/image-photo/little-girl-hugging-mother-outdoors-260nw-1174991539.jpg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: cover;
+                text-align: center;
+                min-height: 33.33em;
+                margin: 0;
+            }
+        }
+
+        &-partners {
+            #aboutPartnersHero {
+                background-image: url('https://image.shutterstock.com/image-photo/group-diverse-hands-together-joining-260nw-344201303.jpg');
+                text-align: center;
+                @extend %parallax;
+                min-height: 33.33em;
+            }
+
+            #aboutPartnersStatement {
+                line-height: 1.75;
+                padding-bottom: 28px;
+                position: relative;
+                text-align: center;
+
+                p {
+                    font-size: 24px;
+                }
+
+                &:before {
+                    background: $secondaryOrange;
+                    margin-left: -60px;
+                    position: absolute;
+                    width: 120px;
+                    content: '';
+                    height: 5px;
+                    bottom: 0;
+                    left: 50%;
+                }
+            }
+
+            #aboutPartnersReviews {
+                .row {
+                    text-align: center;
+                    padding: 4% 0px;
+                    margin: 4% 0px;
+
+                    .col {
+                        p {
+                            max-width: 88%;
+                            margin: auto;
+                            margin-bottom: 2rem;
+
+                            &:first-child {
+                                color: $secondaryOrange;
+                                font-size: 24px;
+                            }
+                        }
+
+                        &:before {
+                            background: $secondaryOrange;
+                            margin-left: -60px;
+                            position: absolute;
+                            width: 120px;
+                            content: '';
+                            height: 5px;
+                            bottom: 0;
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-team {
+            #aboutTeamHero {
+                background-image: url('http://legendasparafotos.net.br/wp-content/uploads/2018/01/frases-para-fotos.jpg');
+                text-align: center;
+                @extend %parallax;
+                min-height: 33.33em;
+            }
+
+            #aboutTeamEmployees,
+            #aboutTeamDirectors {
+                text-align: center;
+
+                .card-group {
+                    text-align: initial;
+                }
+            }
+        }
+    }
+}
