@@ -6,21 +6,68 @@ main.ywca-harbor {
         }
 
         &-partners {
+            #aboutPartnersHero {
+                background-image: url('https://image.shutterstock.com/image-photo/group-diverse-hands-together-joining-260nw-344201303.jpg');
+                text-align: center;
+                @extend %parallax;
+                height: 70vh;
+            }
 
+            #aboutPartnersStatement {
+                line-height: 1.75;
+                padding-bottom: 28px;
+                position: relative;
+                text-align: center;
+
+                p {
+                    font-size: 24px;
+                }
+
+                &:before {
+                    background: $secondaryOrange;
+                    margin-left: -60px;
+                    position: absolute;
+                    width: 120px;
+                    content: "";
+                    height: 5px;
+                    bottom: 0;
+                    left: 50%;
+                }
+            }
+
+            #aboutPartnersReviews {
+                .row {
+                    text-align: center;
+                    margin: 72px 0px;
+
+                    p {
+                        max-width: 88%;
+                        margin: auto;
+                        margin-bottom: 2rem;
+
+                        &:first-child {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
         }
 
         &-team {
             #aboutTeamHero {
                 background-image: url('http://legendasparafotos.net.br/wp-content/uploads/2018/01/frases-para-fotos.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
                 text-align: center;
+                @extend %parallax;
                 height: 70vh;
             }
 
             #aboutTeamEmployees,
             #aboutTeamDirectors {
                 text-align: center;
+
+                .card-group {
+                    text-align: initial;
+                }
             }
         }
     }

@@ -12,6 +12,13 @@
     user-select: none;
 }
 
+%parallax {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
 @keyframes wave {
     50% { transform: scale(.9) };
 }
