@@ -1,0 +1,27 @@
+main.ywca-harbor {
+    &.about {
+
+        &-mission {
+
+        }
+
+        &-partners {
+
+        }
+
+        &-team {
+            #aboutTeamHero {
+                background-image: url('http://legendasparafotos.net.br/wp-content/uploads/2018/01/frases-para-fotos.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+                height: 70vh;
+            }
+
+            #aboutTeamEmployees,
+            #aboutTeamDirectors {
+                text-align: center;
+            }
+        }
+    }
+}
