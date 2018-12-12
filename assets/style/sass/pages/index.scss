@@ -17,7 +17,7 @@ main.ywca-harbor {
                 font-size: 24px;
             }
 
-            &:before {
+            &::before {
                 background: $secondaryOrange;
                 margin-left: -60px;
                 position: absolute;
