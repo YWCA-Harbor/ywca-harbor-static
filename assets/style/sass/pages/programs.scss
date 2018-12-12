@@ -1,0 +1,58 @@
+main.ywca-harbor {
+    &.programs {
+        &-racial-justice {
+            #programsRJHero {
+                background-image: url(https://image.shutterstock.com/image-photo/washington-december-13-protesters-march-260nw-237428011.jpg);
+                @extend %parallax;
+                min-height: 33.33em;
+                text-align: center;
+            }
+
+            #programsRJStats {
+
+                p {
+                    font-weight: 800;
+
+                    strong {
+                        color: $primaryOrange;
+                    }
+                }
+            }
+
+            #programsRJMessage {
+                background: url(https://image.shutterstock.com/image-photo/old-young-holding-hands-on-260nw-256885348.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 33.33em;
+                text-align: center;
+                margin: 0;
+                border-bottom: 3px solid $mediumLightGrey;
+
+                p {
+                    color: #fff;
+
+                    &:first-child {
+                        font-size: 36px;
+                    }
+                }
+            }
+
+            #programsHTHero {
+                background-image: url(https://image.shutterstock.com/image-photo/womans-hand-grabs-fence-concept-260nw-411771103.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 33.33em;
+                text-align: center;
+            }
+
+            #programsHTFact {
+                background-image: url(https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F7ac80d76d958c715578266b0db7f1ae4%2F202691470%2Fscottkellyla.png&client=amp-blogside-v2&signature=1762bf0c177326912790e32b771c340e27877e64);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: cover;
+                min-height: 33.33em;
+                text-align: center;
+            }
+        }
+    }
+}
