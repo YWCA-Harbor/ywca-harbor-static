@@ -351,23 +351,29 @@ header {
                         }
                     }
 
-                    &:nth-child(2) {
-                        div {
-                            left: 196px;
-                        }
-                    }
+                    // &:nth-child(2) {
+                    //     div {
+                    //         left: 104px;
+                    //     }
+                    // }
 
-                    &:nth-child(3) {
-                        div {
-                            left: 292px;
-                        }
-                    }
+                    // &:nth-child(3) {
+                    //     div {
+                    //         left: 200px;
+                    //     }
+                    // }
 
-                    &:nth-child(4) {
-                        div {
-                            left: 408px;
-                        }
-                    }
+                    // &:nth-child(4) {
+                    //     div {
+                    //         left: 336px;
+                    //     }
+                    // }
+
+                    // &:nth-child(5) {
+                    //     div {
+                    //         left: 464px;
+                    //     }
+                    // }
                 }
 
                 @media only screen and (max-width: 767px) {
