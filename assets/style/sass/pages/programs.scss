@@ -54,5 +54,18 @@ main.ywca-harbor {
                 text-align: center;
             }
         }
+
+        &-human-wellness {
+
+            #programsHWHero {
+                background-image: url(https://image.shutterstock.com/image-photo/senior-adult-couple-exercise-fitness-260nw-583124596.jpg);
+                @extend %parallax;
+                min-height: 33.33em;
+                text-align: center;
+            }
+
+            #programsHWContent {
+            }
+        }
     }
 }
