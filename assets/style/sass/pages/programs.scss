@@ -65,6 +65,47 @@ main.ywca-harbor {
             }
 
             #programsHWContent {
+
+                #HWTabsWrapper {
+                    border: 1px solid $darkWhite;
+
+                    h3 {
+                        text-align: center;
+                    }
+
+                    .nav-link {
+                        border: 1px solid $primaryOrange;
+                        color: $primaryOrange;
+                        margin: 4px 0px;
+
+                        &.active {
+                            @extend %transitions;
+                            color: #fff;
+                        }
+
+                        &:hover {
+                            background: $primaryOrange;
+                            @extend %transitions;
+                            color: #fff;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 2em;
+                        }
+                    }
+                }
+
+                #HWTabContent {
+                    padding: 24px;
+
+                    .tab-pane {
+                        @extend %transitions;
+
+                        &.active {
+                            @extend %transitions;
+                        }
+                    }
+                }
             }
         }
     }

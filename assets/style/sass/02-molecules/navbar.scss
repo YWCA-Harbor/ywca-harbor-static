@@ -300,6 +300,7 @@ header {
                         top: 60px;
 
                         a {
+                            border-bottom: 1px solid #fff;
                             background: $mediumDarkGrey;
                             padding: 12px 16px;
                             text-align: left;
@@ -330,6 +331,10 @@ header {
                                 &.mobile-display {
                                     display: block;
                                 }
+                            }
+
+                            &:last-child {
+                                border-bottom: unset;
                             }
                         }
 
