@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     if(window.location.pathname === '/pages/programs/human-wellness.html') {
-        enableTabs();
+        enableTabs('HWTabs');
+    } else if (window.location.pathname === '/contact-us.html') {
+        enableTabs('contactUsTabs');
     }
 });
 
-function enableTabs() {
+function enableTabs(querySelector) {
     // first, reference the .nav component that holds all tabs
-    var myTabs = document.getElementById('HWTabs');
+    var myTabs = document.getElementById(querySelector);
 
     // Initialize a JavaScript reference for the "target" option
     var myTabsCollection = myTabs.getElementsByTagName('a');
