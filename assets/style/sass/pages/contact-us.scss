@@ -13,6 +13,14 @@ main.ywca-harbor {
                 .col-4 {
                     text-align: center;
                 }
+
+                & + .tab-content {
+                    display: flex;
+
+                    .tab-pane {
+                        margin: auto;
+                    }
+                }
             }
         }
 
@@ -29,10 +37,9 @@ main.ywca-harbor {
                 }
 
                 #contactUsMap {
-                    background-image: url(/assets/img/map-lg.png);
-                    background-position: center;
+                    background-image: url(/assets/img/map-sm.png);
                     background-size: cover;
-                    padding-bottom: 485px;
+                    padding-bottom: 240px;
 
                     .map-direction {
 
@@ -45,26 +52,30 @@ main.ywca-harbor {
                             margin: auto;
 
                             p {
+                                margin: 16px 0px;
                                 color: #fff;
                             }
 
                             .btn {
                                 border: 2px solid #fff;
-                                margin: 0;
+                                text-align: center;
+                                margin: 0px;
+                                display: block;
                             }
 
                             &::after {
-                                border-color: $primaryOrange;
                                 border: solid transparent;
                                 pointer-events: none;
                                 border-width: 12px;
                                 position: absolute;
                                 margin-left: -12px;
-                                content: "";
+                                content: " ";
                                 top: 100%;
                                 left: 50%;
                                 height: 0;
                                 width: 0;
+                                border-color: #fa461600;
+                                border-top-color: $primaryOrange;
                             }
                         }
                     }
