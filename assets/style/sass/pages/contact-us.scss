@@ -52,6 +52,20 @@ main.ywca-harbor {
                                 border: 2px solid #fff;
                                 margin: 0;
                             }
+
+                            &::after {
+                                border-color: $primaryOrange;
+                                border: solid transparent;
+                                pointer-events: none;
+                                border-width: 12px;
+                                position: absolute;
+                                margin-left: -12px;
+                                content: "";
+                                top: 100%;
+                                left: 50%;
+                                height: 0;
+                                width: 0;
+                            }
                         }
                     }
                 }
