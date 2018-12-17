@@ -3,9 +3,7 @@ main.ywca-harbor {
         &-racial-justice {
             #programsRJHero {
                 background-image: url(https://image.shutterstock.com/image-photo/washington-december-13-protesters-march-260nw-237428011.jpg);
-                @extend %parallax;
-                min-height: 33.33em;
-                text-align: center;
+                @extend %hero;
             }
 
             #programsRJStats {
@@ -59,9 +57,7 @@ main.ywca-harbor {
 
             #programsHWHero {
                 background-image: url(https://image.shutterstock.com/image-photo/senior-adult-couple-exercise-fitness-260nw-583124596.jpg);
-                @extend %parallax;
-                min-height: 33.33em;
-                text-align: center;
+                @extend %hero;
             }
 
             #programsHWContent {

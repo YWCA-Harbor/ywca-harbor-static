@@ -4,9 +4,7 @@ main.ywca-harbor {
         &-mission {
             #aboutMissionHero {
                 background-image: url(https://image.shutterstock.com/image-photo/african-american-cute-little-girl-260nw-288152339.jpg);
-                @extend %parallax;
-                min-height: 33.33em;
-                text-align: center;
+                @extend %hero;
             }
 
             .about-mission-statements {
@@ -50,9 +48,7 @@ main.ywca-harbor {
         &-partners {
             #aboutPartnersHero {
                 background-image: url('https://image.shutterstock.com/image-photo/group-diverse-hands-together-joining-260nw-344201303.jpg');
-                text-align: center;
-                @extend %parallax;
-                min-height: 33.33em;
+                @extend %hero;
             }
 
             #aboutPartnersStatement {
@@ -113,9 +109,7 @@ main.ywca-harbor {
         &-team {
             #aboutTeamHero {
                 background-image: url('http://legendasparafotos.net.br/wp-content/uploads/2018/01/frases-para-fotos.jpg');
-                text-align: center;
-                @extend %parallax;
-                min-height: 33.33em;
+                @extend %hero;
             }
 
             #aboutTeamEmployees,

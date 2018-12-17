@@ -1,0 +1,34 @@
+main.ywca-harbor {
+    &.contact-us {
+
+        #contactUsHero {
+            background-image: url(https://image.shutterstock.com/image-photo/african-american-cute-little-girl-260nw-288152339.jpg);
+            @extend %hero;
+        }
+
+        #contactUsResources {
+
+            #contactUsTabs {
+
+                .col-4 {
+                    text-align: center;
+                }
+            }
+        }
+
+        #contactUsInformation {
+            .col-6 {
+
+                &:first-child {
+                    div {
+                        padding: 0px .83333%;
+                        margin-bottom: 45px;
+                        float: left;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+    }
+}

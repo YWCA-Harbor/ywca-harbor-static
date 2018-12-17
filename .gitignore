@@ -26,5 +26,5 @@ prepros-6.config
 .history
 
 # Temporary
-assets/style/sass/vendors/bootstrap-styles
+assets/js/config/seo.json
 
