@@ -27,6 +27,34 @@ main.ywca-harbor {
                         width: 50%;
                     }
                 }
+
+                #contactUsMap {
+                    background-image: url(/assets/img/map-lg.png);
+                    background-position: center;
+                    background-size: cover;
+                    padding-bottom: 485px;
+
+                    .map-direction {
+
+                        .directions {
+                            padding: 48px 48px 48px 80px;
+                            background: $primaryOrange;
+                            background-size: 6%;
+                            position: relative;
+                            width: 360px;
+                            margin: auto;
+
+                            p {
+                                color: #fff;
+                            }
+
+                            .btn {
+                                border: 2px solid #fff;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
             }
         }
 
