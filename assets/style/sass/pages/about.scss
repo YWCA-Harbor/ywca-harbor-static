@@ -3,7 +3,7 @@ main.ywca-harbor {
 
         &-mission {
             #aboutMissionHero {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),   
                 url(https://image.shutterstock.com/image-photo/african-american-cute-little-girl-260nw-288152339.jpg);
                 @extend %hero;
             }
@@ -21,7 +21,7 @@ main.ywca-harbor {
             }
 
             #aboutMissionVision {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),   
                 url(https://image.shutterstock.com/image-photo/group-women-socialize-teamwork-happiness-260nw-526817902.jpg);
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
@@ -37,7 +37,7 @@ main.ywca-harbor {
             }
 
             #aboutMissionChangeLives {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),   
                 url(https://image.shutterstock.com/image-photo/little-girl-hugging-mother-outdoors-260nw-1174991539.jpg);
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
@@ -50,7 +50,7 @@ main.ywca-harbor {
 
         &-partners {
             #aboutPartnersHero {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),   
                 url('https://image.shutterstock.com/image-photo/group-diverse-hands-together-joining-260nw-344201303.jpg');
                 @extend %hero;
             }
@@ -112,7 +112,7 @@ main.ywca-harbor {
 
         &-team {
             #aboutTeamHero {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),    
                 url('http://legendasparafotos.net.br/wp-content/uploads/2018/01/frases-para-fotos.jpg');
                 @extend %hero;
             }

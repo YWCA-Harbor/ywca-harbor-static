@@ -2,7 +2,7 @@ main.ywca-harbor {
     &.programs {
         &-racial-justice {
             #programsRJHero {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),   
                 url(https://image.shutterstock.com/image-photo/washington-december-13-protesters-march-260nw-237428011.jpg);
                 @extend %hero;
             }
@@ -37,7 +37,7 @@ main.ywca-harbor {
             }
 
             #programsHTHero {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),   
                 url(https://image.shutterstock.com/image-photo/womans-hand-grabs-fence-concept-260nw-411771103.jpg);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -46,7 +46,7 @@ main.ywca-harbor {
             }
 
             #programsHTFact {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),   
                 url(https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F7ac80d76d958c715578266b0db7f1ae4%2F202691470%2Fscottkellyla.png&client=amp-blogside-v2&signature=1762bf0c177326912790e32b771c340e27877e64);
                 background-repeat: no-repeat;
                 background-position: 50% 50%;
@@ -59,7 +59,7 @@ main.ywca-harbor {
         &-human-wellness {
 
             #programsHWHero {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),   
                 url(https://image.shutterstock.com/image-photo/senior-adult-couple-exercise-fitness-260nw-583124596.jpg);
                 @extend %hero;
             }

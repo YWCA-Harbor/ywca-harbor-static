@@ -2,7 +2,7 @@ main.ywca-harbor {
     &.contact-us {
 
         #contactUsHero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
             url(https://image.shutterstock.com/image-photo/african-american-cute-little-girl-260nw-288152339.jpg);
             @extend %hero;
         }
@@ -14,11 +14,18 @@ main.ywca-harbor {
                 .col-4 {
                     text-align: center;
                 }
+            }
 
-                & + .tab-content {
-                    display: flex;
+            #contactUsContent {
+                margin: 32px 0px;
 
-                    .tab-pane {
+                .collapse.card.card-body,
+                .collapsing.card.card-body {
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    p {
                         margin: auto;
                     }
                 }
@@ -26,7 +33,7 @@ main.ywca-harbor {
         }
 
         #contactUsInformation {
-            .col-6 {
+            .col-md-6.col-sm-12 {
 
                 &:first-child {
                     div {
@@ -34,6 +41,14 @@ main.ywca-harbor {
                         margin-bottom: 45px;
                         float: left;
                         width: 50%;
+
+                        a {
+                            font-size: 12px;
+                        }
+
+                        @media only screen and (max-width:992px) {
+                            width: 100%;
+                        }
                     }
                 }
 
@@ -78,7 +93,21 @@ main.ywca-harbor {
                                 border-color: #fa461600;
                                 border-top-color: $primaryOrange;
                             }
+
+                            @media only screen and (max-width:992px) {
+                                padding: 24px 24px 24px 40px;
+                                width: 240px;
+                            }
                         }
+                    }
+
+                    @media only screen and (max-width:992px) {
+                        background-position: -56px -64px;
+                        padding-bottom: 360px;
+                    }
+
+                    @media only screen and (max-width:767px) {
+                        display: none;
                     }
                 }
             }
