@@ -2,7 +2,8 @@ main.ywca-harbor {
     &.contact-us {
 
         #contactUsHero {
-            background-image: url(https://image.shutterstock.com/image-photo/african-american-cute-little-girl-260nw-288152339.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url(https://image.shutterstock.com/image-photo/african-american-cute-little-girl-260nw-288152339.jpg);
             @extend %hero;
         }
 
