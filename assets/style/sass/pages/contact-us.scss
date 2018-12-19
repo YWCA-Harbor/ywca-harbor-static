@@ -8,11 +8,23 @@ main.ywca-harbor {
         }
 
         #contactUsResources {
+            text-align: center;
 
             #contactUsTabs {
+                margin: 24px 0px;
 
-                .col-4 {
+                .col-sm-12.col-md-3 {
                     text-align: center;
+
+                    .btn {
+                        i {
+                            padding-left: 4px;
+                        }
+                    }
+
+                    @media only screen and (max-width:767px) {
+                        margin: 32px 0px;
+                    }
                 }
             }
 
