@@ -35,6 +35,8 @@ main.ywca-harbor {
             img {
                 border-top-left-radius: 0.5rem;
                 border-top-right-radius: 0.5rem;
+                object-fit: cover;
+                height: 240px;
             }
 
             a {

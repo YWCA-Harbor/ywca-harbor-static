@@ -77,6 +77,15 @@ main.ywca-harbor {
                 }
             }
 
+            #aboutPartnersCardGroup {
+                img {
+                    border-top-left-radius: 0.5rem;
+                    border-top-right-radius: 0.5rem;
+                    object-fit: cover;
+                    height: 240px;
+                }
+            }
+
             #aboutPartnersReviews {
                 .row {
                     text-align: center;
@@ -123,6 +132,14 @@ main.ywca-harbor {
 
                 .card-group {
                     text-align: initial;
+
+                    img {
+                        border-top-left-radius: 0.5rem;
+                        border-top-right-radius: 0.5rem;
+                        object-position: 75% 50%;
+                        object-fit: cover;
+                        height: 240px;
+                    }
                 }
             }
         }
