@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     if(window.location.pathname === '/pages/programs/human-wellness.html') {
         enableTabs('HWTabs');
+    } else if(window.location.pathname === '/pages/programs/seasonal.html') {
+        enableTabs('SeasonsTabs');
     }
 });
 

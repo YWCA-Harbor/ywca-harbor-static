@@ -30,6 +30,16 @@ main.ywca-harbor {
                         padding: 0px 4px;
                     }
                 }
+
+                &:last-child {
+                    .card {
+                        &:last-child {
+                            img {
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -113,6 +123,5 @@ main.ywca-harbor {
                 }
             }
         }
-
     }
 }

@@ -108,5 +108,98 @@ main.ywca-harbor {
                 }
             }
         }
+
+        &-seasons {
+            #programsSeasonsHero {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url(https://image.shutterstock.com/image-photo/christmas-decoration-mistletoe-holly-berriesivy-260nw-751034857.jpg);
+                @extend %hero;
+            }
+
+            #programsSeasonsContent {
+
+                #SeasonsTabsWrapper {
+                    border: 1px solid $darkWhite;
+
+                    h3 {
+                        text-align: center;
+                    }
+
+                    .nav-link {
+                        border: 1px solid $primaryOrange;
+                        color: $primaryOrange;
+                        margin: 4px 0px;
+
+                        &.active {
+                            @extend %transitions;
+                            color: #fff;
+                        }
+
+                        &:hover {
+                            background: $primaryOrange;
+                            @extend %transitions;
+                            color: #fff;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 2em;
+                        }
+                    }
+                }
+
+                #SeasonsTabContent {
+                    padding: 24px;
+
+                    .tab-pane {
+                        @extend %transitions;
+
+                        &.active {
+                            @extend %transitions;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-thrift-store {
+            #thriftStoreHero {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url(https://image.shutterstock.com/image-photo/clothes-hang-on-shelf-store-260nw-301224008.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height:  100%;
+            }
+
+            #thriftStoreIntro,
+            #thriftStoreInformation {
+                text-align: center;
+            }
+
+            #thriftStoreInformation {
+                .card {
+                    transform-style: preserve-3d;
+                    transition: transform 1s;
+                    position: relative;
+                    cursor: pointer;
+
+                    .card__face {
+                        backface-visibility: hidden;
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+
+                        &.front {
+                        }
+
+                        &.back {
+                            transform: rotateY( 180deg );
+                        }
+                    }
+                    &:hover {
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+        }
     }
 }
