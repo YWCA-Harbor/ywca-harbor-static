@@ -176,27 +176,29 @@ main.ywca-harbor {
             }
 
             #thriftStoreInformation {
-                .card {
-                    transform-style: preserve-3d;
-                    transition: transform 1s;
-                    position: relative;
-                    cursor: pointer;
+                .card-group {
+                    min-height: 512px;
 
-                    .card__face {
-                        backface-visibility: hidden;
-                        position: absolute;
-                        height: 100%;
-                        width: 100%;
+                    .card {
+                        transform-style: preserve-3d;
+                        transition: transform 1s;
+                        position: relative;
+                        min-height: 540px;
+                        cursor: pointer;
 
-                        &.front {
+                        .card__face {
+                            backface-visibility: hidden;
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+
+                            &.back {
+                                transform: rotateY( 180deg );
+                            }
                         }
-
-                        &.back {
-                            transform: rotateY( 180deg );
+                        &:hover {
+                            transform: rotateY(180deg);
                         }
-                    }
-                    &:hover {
-                        transform: rotateY(180deg);
                     }
                 }
             }
