@@ -1,0 +1,38 @@
+main.ywca-harbor {
+    &.children {
+
+        &-services {
+            #childrenServicesHero {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(https://image.shutterstock.com/image-photo/boy-girl-on-playground-260nw-528652228.jpg);
+                @extend %hero;
+            }
+
+            #childrenServicesSteps {
+                background: $primaryOrange;
+            }
+
+            #childrenServicesContact {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(https://image.shutterstock.com/image-photo/portrait-cute-adorable-blond-caucasian-260nw-1142906828.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100%;
+                margin: 0px;
+
+                a {
+                    display: inline-block;
+                    margin: 16px 0px;
+                }
+            }
+        }
+
+        &-curriculum {
+            #childrenCurriculumHero {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url('https://image.shutterstock.com/image-photo/group-diverse-hands-together-joining-260nw-344201303.jpg');
+                @extend %hero;
+            }
+        }
+    }
+}
