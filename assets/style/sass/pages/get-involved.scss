@@ -1,0 +1,63 @@
+main.ywca-harbor {
+    &.get-involved {
+        &-opportunities {
+
+            #opportunitiesHero {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(https://image.shutterstock.com/image-photo/african-american-cute-little-girl-260nw-288152339.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: calc(100vh - 116px);
+                text-align: center;
+
+                .container {
+                    padding: 48px;
+                }
+            }
+
+            #opportunitiesContent {
+
+                #OpportunitiesTabsWrapper {
+                    border: 1px solid $darkWhite;
+
+                    h3 {
+                        text-align: center;
+                    }
+
+                    .nav-link {
+                        border: 1px solid $primaryOrange;
+                        color: $primaryOrange;
+                        margin: 4px 0px;
+
+                        &.active {
+                            @extend %transitions;
+                            color: #fff;
+                        }
+
+                        &:hover {
+                            background: $primaryOrange;
+                            @extend %transitions;
+                            color: #fff;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 2em;
+                        }
+                    }
+                }
+
+                #OpportunitiesTabContent {
+                    padding: 24px;
+
+                    .tab-pane {
+                        @extend %transitions;
+
+                        &.active {
+                            @extend %transitions;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

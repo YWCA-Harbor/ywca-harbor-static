@@ -6,13 +6,15 @@
   width: 100%;
   padding-right: ($grid-gutter-width / 2);
   padding-left: ($grid-gutter-width / 2);
-  margin: 12vh auto;
+  margin: 8vh auto;
 }
 
 
 // For each breakpoint, define the maximum width of the container in a media query
 @mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
-  @each $breakpoint, $container-max-width in $max-widths {
+
+  @each $breakpoint,
+  $container-max-width in $max-widths {
     @include media-breakpoint-up($breakpoint, $breakpoints) {
       max-width: $container-max-width;
     }
@@ -47,5 +49,5 @@
 
 @mixin make-col-offset($size, $columns: $grid-columns) {
   $num: $size / $columns;
-  margin-left: if($num == 0, 0, percentage($num));
+  margin-left: if($num==0, 0, percentage($num));
 }

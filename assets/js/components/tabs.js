@@ -1,8 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    if(window.location.pathname === '/pages/programs/human-wellness.html') {
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.location.pathname === '/pages/programs/human-wellness.html') {
         enableTabs('HWTabs');
-    } else if(window.location.pathname === '/pages/programs/seasonal.html') {
+    } else if (window.location.pathname === '/pages/programs/seasonal.html') {
         enableTabs('SeasonsTabs');
+    } else if (window.location.pathname === '/pages/get-involved/opportunities.html') {
+        enableTabs('OpportunitiesTabs');
     }
 });
 

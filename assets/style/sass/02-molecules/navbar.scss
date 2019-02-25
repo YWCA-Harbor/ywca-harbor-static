@@ -3,15 +3,15 @@ header {
     padding-bottom: 60px;
 
     #slanted-header * {
-        -webkit-transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
-        -moz-transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
-        transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
+        -webkit-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+        -moz-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
     }
 
     #slanted-header {
         box-shadow: 0px 9px 34px $blackOpacity;
         background: #fff !important;
-        z-index: 9999!important;
+        z-index: 9999 !important;
         position: fixed;
         height: 60px;
         padding: 0px;
@@ -27,7 +27,7 @@ header {
             display: block;
             z-index: 100;
             height: 60px;
-            width: 150px;
+            width: 100px;
             padding: 0px;
             opacity: 0;
             left: 0px;
@@ -41,14 +41,14 @@ header {
                 }
 
                 ~.menu-box {
-                    margin-right: 190px;
+                    margin-right: 140px;
                     right: 0%;
                 }
 
                 ~.ham-menu {
                     span {
                         &:first-child {
-                            transform: rotateZ(-45deg) translate(-5px,5px);
+                            transform: rotateZ(-45deg) translate(-5px, 5px);
                         }
 
                         &:nth-child(2) {
@@ -56,12 +56,12 @@ header {
                         }
 
                         &:nth-child(3) {
-                            transform: rotateZ(45deg) translate(-5px,-5px);
+                            transform: rotateZ(45deg) translate(-5px, -5px);
                         }
                     }
                 }
 
-                @media only screen and (max-width: 767px) {
+                @media only screen and (max-width: 769px) {
 
                     ~.menu-options-wrapper {
                         left: 0px;
@@ -79,14 +79,14 @@ header {
                     }
 
                     ~.logo-box-white {
-                        display: block!important;
+                        display: block !important;
                         pointer-events: none;
                         z-index: 400;
                     }
                 }
             }
 
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 769px) {
                 width: 64px;
             }
         }
@@ -102,16 +102,16 @@ header {
             top: 0px;
 
             &.logo-box-white {
-                display: none!important;
+                display: none !important;
             }
 
-            @media only screen and (max-width: 767px){
+            @media only screen and (max-width: 769px) {
                 text-align: right;
             }
 
             // Need to Animate
             img {
-                vertical-align: middle!important;
+                vertical-align: middle !important;
                 max-width: 280px;
                 display: none;
                 width: 200px;
@@ -122,7 +122,7 @@ header {
                     height: 56px;
                 }
 
-                @media only screen and (max-width: 767px){
+                @media only screen and (max-width: 769px) {
                     width: 160px;
                     height: 24px;
 
@@ -184,7 +184,7 @@ header {
             left: 60px;
             top: 21px;
 
-            @media only screen and (max-width: 767px){
+            @media only screen and (max-width: 769px) {
                 display: none !important;
             }
         }
@@ -202,7 +202,7 @@ header {
             margin: 0;
             left: 0px;
 
-              ul {
+            ul {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
@@ -212,7 +212,7 @@ header {
                 margin: auto;
                 position: relative;
                 height: 60px;
-                text-align: center!important;
+                text-align: center !important;
 
                 li {
                     margin-right: 22px;
@@ -228,7 +228,8 @@ header {
                                 float: right;
                             }
 
-                            @media only screen and (max-width: 767px) {
+                            @media only screen and (max-width: 769px) {
+                                pointer-events: none;
                                 display: unset;
                                 width: 0px;
                             }
@@ -242,7 +243,7 @@ header {
                         position: relative;
                         line-height: 60px;
                         font-weight: 400;
-                        font-size: 13px;
+                        font-size: 12px;
                         color: #fff;
 
                         &:hover {
@@ -252,18 +253,18 @@ header {
                             }
 
                             &::after {
-                                -webkit-transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
-                                -moz-transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
-                                transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
+                                -webkit-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+                                -moz-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+                                transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
                                 padding: 0px 24px;
                                 width: 100%;
                             }
                         }
 
                         &::after {
-                            -webkit-transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
-                            -moz-transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
-                            transition: all 0.6s cubic-bezier(0.86,0,0.07,1);
+                            -webkit-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+                            -moz-transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+                            transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
                             transform: skew(-37.6deg);
                             position: absolute;
                             background: #fff;
@@ -276,12 +277,12 @@ header {
                             left: -4px;
                             width: 0%;
 
-                            @media only screen and (max-width: 767px) {
+                            @media only screen and (max-width: 769px) {
                                 display: none;
                             }
                         }
 
-                        @media only screen and (max-width: 767px) {
+                        @media only screen and (max-width: 769px) {
                             padding: 0vh 4vw;
                             font-size: 30px;
                             display: block;
@@ -322,7 +323,7 @@ header {
                                 display: none;
                             }
 
-                            @media only screen and (max-width: 767px) {
+                            @media only screen and (max-width: 769px) {
                                 border: 1px solid $mediumDarkGrey;
                                 color: $primaryOrange;
                                 padding: 12px;
@@ -338,7 +339,7 @@ header {
                             }
                         }
 
-                        @media only screen and (max-width: 767px) {
+                        @media only screen and (max-width: 769px) {
                             left: 0 !important;
                             box-shadow: none;
                             position: static;
@@ -349,14 +350,14 @@ header {
                     }
 
                     @media only screen and (min-width: 768px) {
-                        &:hover{
+                        &:hover {
                             div {
                                 display: block;
                             }
                         }
                     }
 
-                    @media only screen and (max-width: 767px) {
+                    @media only screen and (max-width: 769px) {
                         display: block !important;
                         margin: 0px;
 
@@ -375,7 +376,7 @@ header {
                     }
                 }
 
-                @media only screen and (max-width: 767px) {
+                @media only screen and (max-width: 769px) {
                     margin-top: -104px !important;
                     text-align: left !important;
                     top: 184px !important;
@@ -391,7 +392,7 @@ header {
             position: absolute;
             z-index: 100;
             height: 60px;
-            width: 150px;
+            width: 124px;
             padding: 0px;
             right: 0px;
             top: 0px;
@@ -401,7 +402,7 @@ header {
             }
         }
 
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 769px) {
 
             .mobile-line {
                 border-bottom: 1px solid #fff;
